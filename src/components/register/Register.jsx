@@ -59,7 +59,7 @@ const Register = () => {
   const resendData = async () => {
     for (let user of pendingUsers) {
       try {
-        const response = await fetch('https://back001pwa.onrender.com/auth/register', {
+        const response = await fetch('https://pwaservichil.onrender.com/auth/register', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(user),
@@ -98,7 +98,7 @@ const Register = () => {
     }
 
     try {
-      const response = await fetch('https://back001pwa.onrender.com/auth/register', {
+      const response = await fetch('https://pwaservichil.onrender.com/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, nombre, password }),
